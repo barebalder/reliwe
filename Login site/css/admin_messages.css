@@ -1,0 +1,26 @@
+/**
+ * ADMIN MESSAGES PAGE STYLES
+ * Page-specific styles for admin_messages.php
+ */
+
+/* === MESSAGE CARDS === */
+.messages-list { display: flex; flex-direction: column; gap: 20px; }
+.message-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); border-left: 4px solid #667eea; }
+.message-card.new { border-left-color: #07c290; background: linear-gradient(to right, #f0fff9, white); }
+.message-card.in_progress { border-left-color: #ffc107; }
+.message-card.resolved { border-left-color: #28a745; }
+.message-card.closed { border-left-color: #999; opacity: 0.7; }
+
+/* === MESSAGE CONTENT === */
+.message-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
+.message-sender { font-weight: 700; font-size: 1.1rem; color: #333; }
+.message-email { color: #667eea; font-size: 0.95rem; }
+.message-phone { color: #666; font-size: 0.9rem; }
+.message-meta { text-align: right; font-size: 0.9rem; color: #999; }
+.message-category { display: inline-block; padding: 5px 12px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 20px; font-size: 0.85rem; margin-bottom: 10px; font-weight: 600; }
+.message-body { background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; line-height: 1.8; color: #333; white-space: pre-line; }
+
+/* === MESSAGE ACTIONS === */
+.message-actions { display: flex; gap: 10px; align-items: center; margin-top: 15px; flex-wrap: wrap; }
+.status-select { padding: 10px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 0.95rem; background: white; cursor: pointer; }
+.status-select:focus { border-color: #667eea; outline: none; }

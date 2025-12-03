@@ -31,22 +31,28 @@
 ```bash
 # 1. Start XAMPP (Apache + MySQL)
 
-# 2. Create database
-mysql -u root -e "CREATE DATABASE login_system"
+# 2. Create database and team user (run FIRST)
+cd database/
+mysql -u root < setup_team_database.sql
 
 # 3. Import schema (run in order)
-cd database/
-mysql -u root login_system < setup_database.sql
-mysql -u root login_system < setup_profiles.sql
-mysql -u root login_system < setup_admin.sql
-mysql -u root login_system < setup_cart_system.sql
-mysql -u root login_system < setup_products.sql
+mysql -u teamuser -ppassword123 project_db < setup_database.sql
+mysql -u teamuser -ppassword123 project_db < setup_profiles.sql
+mysql -u teamuser -ppassword123 project_db < setup_admin.sql
+mysql -u teamuser -ppassword123 project_db < setup_cart_system.sql
+mysql -u teamuser -ppassword123 project_db < setup_products.sql
 
 # 4. Access the site
 open http://localhost/Login%20site/
 ```
 
-**Default Credentials:**
+**Database Credentials:**
+- Database: `project_db`
+- Username: `teamuser`
+- Password: `password123`
+- Host: `localhost` (or your IP for remote access)
+
+**Default Admin Login:**
 - Admin: `admin@reliwe.com` / `password`
 - Test User: Create via registration form
 

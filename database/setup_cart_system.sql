@@ -1,13 +1,13 @@
 -- =====================================================
 -- CART SYSTEM DATABASE EXTENSION
 -- =====================================================
--- This script extends the existing login_system database
+-- This script extends the existing project_db database
 -- to support persistent shopping cart and user preferences
 --
 -- Run this AFTER setup_database.sql and setup_admin.sql
 -- =====================================================
 
-USE login_system;
+USE project_db;
 
 -- =====================================================
 -- SHOPPING CART TABLE

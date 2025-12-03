@@ -5,7 +5,7 @@
 -- Run this AFTER the initial setup_database.sql
 -- =====================================================
 
-USE login_system;
+USE project_db;
 
 -- =====================================================
 -- ADD USER ROLE COLUMN

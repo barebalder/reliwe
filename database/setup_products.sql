@@ -5,7 +5,7 @@
 -- Run after setup_database.sql and setup_admin.sql
 -- =====================================================
 
-USE login_system;
+USE project_db;
 
 -- =====================================================
 -- PRODUCTS TABLE

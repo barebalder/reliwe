@@ -8,9 +8,9 @@
 -- =====================================================
 
 -- Create the database
--- DROP DATABASE IF EXISTS login_system; -- Uncomment to reset database
-CREATE DATABASE IF NOT EXISTS login_system;
-USE login_system;
+-- DROP DATABASE IF EXISTS project_db; -- Uncomment to reset database
+CREATE DATABASE IF NOT EXISTS project_db;
+USE project_db;
 
 -- =====================================================
 -- USERS TABLE

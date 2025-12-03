@@ -5,7 +5,7 @@
 -- Run this AFTER setup_database.sql
 -- =====================================================
 
-USE login_system;
+USE project_db;
 
 -- =====================================================
 -- USER PROFILES TABLE
